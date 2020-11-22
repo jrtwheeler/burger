@@ -6,11 +6,11 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "1026",
-  database: "schema_db"
+  database: "burger_db"
 });
 
 // Make connection.
-connection.connect(function(err) {
+connection.connect((err) => {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
