@@ -51,9 +51,10 @@ var orm = {
       cb(result);
     });
   },
+  //Insert into table
   create: function(table, cols, vals, cb) {
+    //Insert into table using helper function in query string
     var queryString = "INSERT INTO " + table;
-
     queryString += " (";
     queryString += cols.toString();
     queryString += ") ";
@@ -61,12 +62,9 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
-
-    connection.query(queryString, vals, function(err, result) {
-      if (err) {
-        throw err;
-      }
+    //Connection.query, takes query string and call back function
+    connection.query(queryString, vals, (err, result) => {
+      if (err) throw err;
 
       cb(result);
     });
@@ -81,10 +79,8 @@ var orm = {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
+    connection.query(queryString, (err, result) => {
+      if (err) throw err;
 
       cb(result);
     });
@@ -94,10 +90,8 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    connection.query(queryString, function(err, result) {
-      if (err) {
-        throw err;
-      }
+    connection.query(queryString, (err, result) => {
+      if (err) throw err;
 
       cb(result);
     });
