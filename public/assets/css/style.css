@@ -19,5 +19,11 @@ li {
 }
 
 .burger-header {
-  font:
+  font-family: "Alfa Slab One";
+  color: red;
+}
+
+.card-title {
+  font-family: "Alfa Slab One";
+  color: black;
 }
