@@ -1,24 +1,34 @@
 <h1>Eat-Da-Burger!</h1>
 
-<h2>Burger Devoured</h2>
+{{!-- Bootstrap row for burger cards --}}
+<div class="row">
 
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <div class="col-sm-6">
+    <div class="card">
+      <h2 class="card-title">Burger Devoured</h2>
+      <hr>
 
-<h2>Burger Waiting to be Devoured</h2>
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+      {{/unless}}
+      {{/each}}
+    </div>
+  </div>
 
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+  <div class="col-sm-6">
+    <div class="card">
+      <h2 class="card-title">Burger Waiting to be Devoured</h2>
+      <hr>
+      {{#each burgers}}
+      {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
+      {{/if}}
+      {{/each}}
+    </div>
+  </div>
+  {{!-- Close bootstrap row for burger cards --}}
+</div>
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -29,9 +39,9 @@
   </div>
 
   <div class="form-group">
-    <label for="sleepy">Devour?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Burger to be Devoured<br>
-    <input type="radio" name="sleepy" value="0"> Burger Devoured
+    <label for="devoured">Devour?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Burger to be Devoured<br>
+    <input type="radio" name="devoured" value="0"> Burger Devoured
   </div>
 
   <button type="submit">Add Burger</button>
