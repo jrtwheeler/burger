@@ -23,7 +23,8 @@ li {
   color: red;
 }
 
-.card-title {
+.card-title, .burger-subheader {
   font-family: "Alfa Slab One";
   color: black;
+  text: center;
 }
