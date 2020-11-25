@@ -11,7 +11,8 @@
   Eat-Da_Burger is an app that uses mysql, handlebars, express, javascript, bootstrap, and css, and node.js. The purpose of the app is to allow the user to log burgers they have eaten and burgers they will eat. It is written using the MVC pattern. For more information on MVC architecture, please visit : https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-5.0.
 
   The buttons are designed with font awesome graphics. The fonts are from google fonts.
-  ![Web page](public/img/Screen_Cap.png)
+  
+  ![Web page](public/assets/img/Screen_Cap.png)
   ## Installation
   The app is deployed at heroku :
   ## Usage Information
