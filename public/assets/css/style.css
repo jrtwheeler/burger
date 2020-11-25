@@ -4,6 +4,14 @@ li {
   background: #faebd7;
 }
 
+.jumbotron {
+  background: url("../img/burger-photography-tips-styling.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: black;
+  /* background-size: cover; Resize the background image to cover the entire container */
+}
+
 .label {
   font-weight: bold;
 }
