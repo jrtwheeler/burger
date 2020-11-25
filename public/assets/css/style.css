@@ -6,10 +6,19 @@ li {
 
 .jumbotron, body {
   background: url("../img/burger-photography-tips-styling.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
   background-color: black;
-  /* background-size: cover; Resize the background image to cover the entire container */
+}
+
+.change-devoured, .delete-burger {
+  text-align: right;
+}
+
+button {
+  text-align: right;
 }
 
 .label {
