@@ -4,30 +4,29 @@
   {{!-- <p> --}}
   {{!-- Bootstrap row for burger cards --}}
   <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-    <h2 class="burger-subheader m-1">Add a Burger</h2>
+    <div class="col-sm-3">
+      <div class="card m-2 burger-form">
+    <h2 class="burger-subheader m-2" style="color:tan;">Add a Burger</h2>
     <form class="create-form">
 
-      <div class="form-group m-1">
-        <label for="ca m-1">Burger:</label>
+      <div class="form-group m-2">
+        <label for="ca m-2" style="color:tan;">Burger:</label>
         <input type="text" id="ca" name="name">
       </div>
 
-      <div class="form-group m-1">
-        <label for="devoured">Devour?</label><br>
+      <div class="form-group m-2">
         <input type="radio" name="devoured" value="1" checked> New Burger<br>
         <input type="radio" name="devoured" value="0"> Devoured Burger 
       </div>
 
-      <button type="submit" class="btn btn-primary btn-lg m-1">Add Burger</button>
+      <button type="submit" class="btn btn-light m-2">Add Burger</button>
     </form>
     </div>
     </div>
 
     <div class="col-sm-4">
-      <div class="card">
-        <h2 class="card-title m-1">New Burger <i class="fas fa-hamburger" style="color:red;"></i></h2>
+      <div class="card new-burger m-2">
+        <h2 class="card-title new-burger-font m-1" style="color:tan;">New Burger <i class="fas fa-hamburger" style="color:tan;"></i></h2>
         <hr>
         {{#each burgers}}
         {{#if devoured}}
@@ -38,8 +37,8 @@
     </div>
 
     <div class="col-sm-4">
-      <div class="card">
-        <h2 class="card-title m-1">Devoured Burger <i class="fas fa-utensils" style="color:red; text-align: right"></i></h2>
+      <div class="card devoured-burger m-2">
+        <h2 class="card-title m-1" style="color:brown;">Devoured Burger <i class="fas fa-utensils" style="color:brown; text-align: right"></i></h2>
         <hr>
         {{#each burgers}}
         {{#unless devoured}}

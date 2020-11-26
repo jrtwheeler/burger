@@ -4,7 +4,20 @@ li {
   background: #faebd7;
 }
 
-.jumbotron, body {
+.new-burger {
+  background-color: brown;
+}
+
+.devoured-burger {
+  background-color: tan;
+}
+
+.burger-form {
+  background-color: forestgreen;
+}
+
+.jumbotron,
+body {
   background: url("../img/burger-photography-tips-styling.jpg");
   background-position: center;
   /* Center the image */
@@ -13,7 +26,8 @@ li {
   background-color: black;
 }
 
-.change-devoured, .delete-burger {
+.change-devoured,
+.delete-burger {
   text-align: right;
 }
 
@@ -40,7 +54,8 @@ button {
   color: red;
 }
 
-.card-title, .burger-subheader {
+.card-title,
+.burger-subheader {
   font-family: "Alfa Slab One";
   color: black;
   text: center;
